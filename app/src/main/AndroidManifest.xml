@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".TitleScreen" />
-        <activity android:name=".DontTouchTheRedBall"></activity>
+        <activity android:name=".DontTouchTheRedBall" />
+        <activity android:name=".Controls"></activity>
     </application>
 
 </manifest>

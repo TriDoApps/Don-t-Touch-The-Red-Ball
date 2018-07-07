@@ -24,7 +24,7 @@ public class TitleScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_title_screen);
 
-        Log.d(TAG, "Opened title screen");
+        Log.d(TAG, "Entering title screen");
 
         final Button play = findViewById(R.id.play);
 
@@ -33,6 +33,17 @@ public class TitleScreen extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d(TAG, "Clicked Play");
                 Intent intent = new Intent(TitleScreen.this, DontTouchTheRedBall.class);
+                startActivity(intent);
+            }
+        });
+
+        final Button controls = findViewById(R.id.controls);
+
+        controls.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "Clicked How To Play");
+                Intent intent = new Intent(TitleScreen.this, Controls.class);
                 startActivity(intent);
             }
         });
