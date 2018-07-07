@@ -47,6 +47,17 @@ public class TitleScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        final Button credits = findViewById(R.id.credits);
+
+        credits.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "Clicked Credits");
+                Intent intent = new Intent(TitleScreen.this, Credits.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".TitleScreen" />
         <activity android:name=".DontTouchTheRedBall" />
-        <activity android:name=".Controls"></activity>
+        <activity android:name=".Controls" />
+        <activity android:name=".Credits"></activity>
     </application>
 
 </manifest>
